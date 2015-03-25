@@ -4,14 +4,14 @@ def create_user(options = {})
     last_name: "Clinton",
     username: "RedditBill",
     email: "Bill@Clinton.com",
-    password: "123",
+    password: "123"
   }.merge(options))
 end
 
-def create_post(options = {})
+def create_post(user, options = {})
   Post.create!({
     title: "Test Title",
     content: "Words go here",
-    user_id: nil
+    user_id: user.id
   }.merge(options))
 end

@@ -1,0 +1,13 @@
+<h2> Fill in the Post Clone! </h2>
+
+<%= form_for @post do |f| %>
+
+  <%= f.label :title, "Title" %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content, "Content" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit 'Submit New Post' %>
+
+<% end %>
