@@ -1,0 +1,11 @@
+<h1> Welcome to Reddit_Clone </h1>
+
+Sign Up
+
+Sign In
+
+Todays top posts
+
+<% @posts.each do |post| %>
+  <%= link_to post.title, post_path(post) %>
+<% end %>
